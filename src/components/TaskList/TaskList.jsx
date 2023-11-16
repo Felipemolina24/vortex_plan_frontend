@@ -14,7 +14,7 @@ import moment from 'moment';
 
 const TaskList = () => {
   const [active, setActive] = useState(false);
-  const { tasks, loadTasks, deleteTask, toggleTaskDone, loadEvidencias, users} = useTasks();
+  const { tasks, loadTasks, deleteTask, loadEvidencias, users} = useTasks();
   const [activeForm, setActiveForm] = useState(false); // Estado para el modal de UnitsForm
   const [activeEvidencia, setactiveEvidencia] = useState(false); // Estado para el modal de evidencias
 

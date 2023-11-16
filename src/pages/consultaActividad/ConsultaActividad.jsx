@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Formik, Form } from 'formik';
 import Sidebar from '../../components/sidebar/Sidedar';
 import { useTasks } from '../../context/Context';
@@ -7,7 +7,7 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import './ConsultaActividad.css'
 
 const ConsultaActividad = () => {
-  const { getTasksById, tasks, loadTasks } = useTasks();
+  const { getTasksById, tasks } = useTasks();
   const [id, setId] = useState({
     fk_id_login: ''
   });
